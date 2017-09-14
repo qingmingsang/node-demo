@@ -1,0 +1,19 @@
+```
+npm i koa --save-dev
+npm i co-body --save-dev  // body-parser
+
+npm i koa-session --save-dev
+
+npm i co-views --save-dev
+npm i ejs --save-dev
+
+npm i koa-basic-auth --save-dev
+
+npm install koa-compose --save-dev
+
+npm install koa-logger --save-dev
+
+npm i raw-body --save-dev
+
+npm i koa-compress --save-dev
+```
