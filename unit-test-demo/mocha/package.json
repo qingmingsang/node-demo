@@ -1,0 +1,22 @@
+{
+  "name": "mt",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mochawesome": "^1.3.5",
+    "node-fetch": "^1.5.3",
+    "superagent": "^2.0.0"
+  },
+  "dependencies": {
+    "babel-core": "^6.9.1",
+    "babel-preset-es2015": "^6.9.0",
+    "mocha": "^2.5.3"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "ie",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "qm",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "express": "^4.13.4",
+    "supertest": "^1.2.0"
+  },
+  "dependencies": {
+    "istanbul": "^0.4.3",
+    "mocha": "^2.5.3"
+  }
+}

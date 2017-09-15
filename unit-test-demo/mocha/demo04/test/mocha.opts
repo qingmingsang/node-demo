@@ -1,0 +1,4 @@
+--reporter tap
+--recursive
+--growl
+--compilers js:babel-core/register
