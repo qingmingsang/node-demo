@@ -1,0 +1,143 @@
+```
+npm install webpack -g
+
+npm install webpack --save-dev
+npm i webpack --save-dev //也可以这么写，i是install的简写
+
+A prettier output：
+webpack --progress --colors
+
+Watch mode：
+webpack --progress --colors --watch
+
+
+npm install react --save-dev
+npm install react-dom --save-dev
+
+npm install babel-preset-react --save-dev
+npm install babel-core --save-dev
+npm install babel-loader --save-dev
+npm install babel-preset-es2015 --save-dev  //es6
+
+npm i babel-core babel-loader babel-preset-es2015 babel-preset-react --save-dev
+
+#node env
+
+npm install koa@next --save-dev
+npm install koa-compose@next --save-dev
+npm install koa-static@next --save-dev
+npm install koa-logger@next --save-dev
+npm install koa-compress@next --save-dev
+//npm install koa-session --save-dev
+npm install koa-session2@node6 --save-dev
+npm install koa-bodyparser@next --save-dev
+npm install koa-convert --save-dev
+npm install koa-csrf --save-dev
+npm install koa-cors --save-dev
+npm install koa-router@next --save-dev
+//npm install koa-route@next --save-dev
+
+npm install koa@next koa-static@next koa-logger@next koa-session2@node6 koa-bodyparser@next koa-convert koa-csrf koa-cors koa-router@next --save-dev
+
+npm install fs-promise --save-dev
+
+
+npm i  babel-cli -g
+npm i  babel-cli babel-preset-stage-0 babel-preset-es2015 --save-dev
+
+
+npm install babel-plugin-transform-runtime --save-dev 
+npm install babel-runtime --save-dev 
+
+npm i  babel-cli babel-core  babel-loader  babel-plugin-transform-runtime  babel-polyfill babel-preset-es2015 babel-preset-stage-0 babel-runtime --save-dev
+
+  "plugins": [
+    ["transform-runtime", {
+      "polyfill": false,
+      "regenerator": true
+    }]
+  ],
+
+npm install webpack -g
+npm install webpack --save-dev  
+npm i babel-core babel-polyfill babel-loader  --save-dev
+  
+//npm i  babel-polyfill --save-dev
+
+
+npm install --save-dev babel-preset-stage-1  --save-dev
+npm install babel-plugin-transform-class-properties --save-dev  //为了支持ES6的class以及其他非标准化的语法
+
+npm i redux react-redux --save-dev //redux
+
+npm i css-loader style-loader --save-dev  //加载CSS文件
+npm i file-loader url-loader --save-dev  //加载图片
+
+npm i html-webpack-plugin --save-dev  //创建HTML文件插件
+npm i open-browser-webpack-plugin --save-dev  //编译后创建本地服务器，然后自动在浏览器打开HTML插件。这个插件感觉没卵用
+
+npm i bundle-loader --save-dev //单独打包?
+
+npm i jquery --save-dev  //jq
+
+npm i antd --save-dev  // ant-design
+
+npm install webpack-dev-server -g    //这里老是出错，但是不装貌似又不行
+npm install webpack-dev-server  --save-dev
+
+webpack-dev-server  //虚拟运行。热编译JS部分
+webpack   //实际打包
+http://localhost:8080/webpack-dev-server
+
+两种方式 Hot Module Replacement
+①运行命令
+webpack-dev-server --hot --inline 
+②config 里 配置 entry等
+
+npm i react-router --save-dev  //安装react-router
+
+npm install webpack react react-dom babel-core babel-preset-react babel-loader babel-preset-es2015 --save-dev
+npm install webpack webpack-dev-server react react-dom babel-core babel-preset-react babel-loader babel-preset-es2015 --save-dev
+
+webpack-dev-server --progress --colors
+
+echo { "presets": ["react"] } > .babelrc
+
+or in package.json
+  "babel": {
+	"presets": ["react"]
+  }
+
+  
+  webpack.config.js
+module.exports = {
+    entry: "./main.js",
+    output: {
+        path: __dirname,
+        filename: "bundle.js"
+    },
+    module: {
+        loaders: [
+			
+            {test: /\.js$/, loader: "babel"}
+        ]
+    }
+};
+
+module.exports = {
+	entry: './index.jsx',
+	output: {
+		filename: 'bundle.js'
+	},
+	module: {
+		loaders: [{
+			test: /\.css$/,
+			loader: 'style-loader!css-loader'
+		}, {
+			test: /\.jsx?$/,
+			exclude: /node_modules/,
+			loader: 'babel-loader'
+		}]
+	}
+};
+```
